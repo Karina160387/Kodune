@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+html {
+    font-size: 62,5%;
+}
+body {
+    font-family: inter;
+    font-size: 1.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inter;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.46em;
+}
