@@ -21,3 +21,68 @@ h6 {
     text-transform: uppercase;
     margin-bottom: 0.46em;
 }
+h1 {
+	font-size: 3.5rem;
+}
+h2 {
+	font-size: 3.4rem;
+}
+h3 {
+	font-size: 3rem;
+}
+h4 {
+	font-size: 2.5rem;
+}
+h5 {
+	font-size: 2rem;
+}
+h6 {
+	font-size: 1.8rem;
+}
+p {
+	font-size: 1.7rem;
+	/* reakõrgus on 1.76 korda suurem siin olevast fondi suurusest, line height puhul võib kirjutada ka ainult 1.76 */
+	line-height: 1.76em;
+	font-family: 'Ubuntu', sans-serif;
+}
+.banner {
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.banner__container {
+	width: 100%;
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 18%;
+}
+h1.banner__heading {
+    max-width: 65%;
+    margin: 45px 0px 30px;
+    font-size: 35px;
+}
+.container__banner {
+    width: 100%;
+    max-width: 83%;
+    margin-right: auto;
+    margin-left: 21px;
+    position: absolute;
+    margin-top: 42px;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Menu__list {
+    display: flex;
+    list-style: none;
+    gap: 33px;
+}
+.menu__link {
+    font-size: 15px;
+    padding: 10px 0px;
+}
