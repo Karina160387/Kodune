@@ -18,7 +18,6 @@ h5,
 h6 {
     font-family: inter;
     font-weight: 400;
-    text-transform: uppercase;
     margin-bottom: 0.46em;
 }
 h1 {
@@ -43,10 +42,17 @@ p {
 	font-size: 1.7rem;
 	/* reakõrgus on 1.76 korda suurem siin olevast fondi suurusest, line height puhul võib kirjutada ka ainult 1.76 */
 	line-height: 1.76em;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Inter', sans-serif;
+}
+.has-text-aligned-center {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 .banner {
-    min-height: 50vh;
+    min-height: 90vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,7 +68,14 @@ p {
 h1.banner__heading {
     max-width: 65%;
     margin: 45px 0px 30px;
-    font-size: 35px;
+    font-size: 51px;
+}
+.container {
+	max-width: 173rem;
+	margin-left: auto;
+	margin-right: auto;
+	/* siin võiks olla selle alumise asemel ka padding left 15px ja padding right 15px */
+	padding: 0 1.5rem;
 }
 .container__banner {
     width: 100%;
@@ -70,7 +83,7 @@ h1.banner__heading {
     margin-right: auto;
     margin-left: 21px;
     position: absolute;
-    margin-top: 42px;
+    margin-top: 122px;
 }
 .header-row {
     display: flex;
@@ -80,9 +93,83 @@ h1.banner__heading {
 .Menu__list {
     display: flex;
     list-style: none;
-    gap: 33px;
+    gap: 10px;
 }
 .menu__link {
     font-size: 15px;
     padding: 10px 0px;
+    text-decoration: none;
+}
+.container--header {
+    padding: 0px 40px;
+    line-height: 72px;
+}
+.button {
+    background-color: black;
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 19px;
+    padding-right: 19px;
+    text-decoration: none;
+}
+.button__add--to-cart {
+    background-color: black;
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    padding-left: 9px;
+    padding-right: 24px;
+    margin: 18px 41px;
+    position: absolute;
+}
+.emty-space {
+    height: 100px;
+}
+.text-align-center {
+    font-size: 2rem;
+    text-align: center;
+}
+.product-grid-list {
+    display: flex;
+    grid-template-columns: revert;
+    flex-direction: row;
+    column-gap: 59px;
+    padding: 0px 15px;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.onsale {
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 3px 20px;
+    z-index: 1;
+}
+.onsale {
+    background: black;
+    color: white;
+    padding: 3px 20px;
+    z-index: 1;
+    left: 43px;
+    bottom: -300px;
+}
+.product-name {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product-price {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+span.sale-price {
+    color: grey;
+    text-decoration: line-through;
+    font-weight: 100;
 }
