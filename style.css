@@ -38,12 +38,25 @@ h5 {
 h6 {
 	font-size: 1.8rem;
 }
+h6.container-kight-banner-text__heading {
+    text-align: center;
+    margin: 65px 0 16px;
+    padding: 0 15px;
+}
+
 p {
 	font-size: 1.7rem;
 	/* reakõrgus on 1.76 korda suurem siin olevast fondi suurusest, line height puhul võib kirjutada ka ainult 1.76 */
 	line-height: 1.76em;
 	font-family: 'Inter', sans-serif;
 }
+p.footer {
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+
 .has-text-aligned-center {
     padding-left: 15px;
     padding-right: 15px;
@@ -74,8 +87,6 @@ h1.banner__heading {
 	max-width: 173rem;
 	margin-left: auto;
 	margin-right: auto;
-	/* siin võiks olla selle alumise asemel ka padding left 15px ja padding right 15px */
-	padding: 0 1.5rem;
 }
 .container__banner {
     width: 100%;
@@ -85,6 +96,18 @@ h1.banner__heading {
     position: absolute;
     margin-top: 122px;
 }
+.container-light-banner {
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+}
+.container-light-banner-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 22px;
+}
+
 .header-row {
     display: flex;
     justify-content: space-between;
@@ -100,6 +123,9 @@ h1.banner__heading {
     padding: 10px 0px;
     text-decoration: none;
 }
+.menu__list {
+    list-style-type: none;
+}
 .container--header {
     padding: 0px 40px;
     line-height: 72px;
@@ -113,6 +139,7 @@ h1.banner__heading {
     padding-right: 19px;
     text-decoration: none;
 }
+
 .button__add--to-cart {
     background-color: black;
     color: white;
@@ -123,6 +150,26 @@ h1.banner__heading {
     padding-right: 24px;
     margin: 18px 41px;
     position: absolute;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.button__shop-now {
+    background-color: black;
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 18px 41px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 21%;
+    position: relative;
+    left: 309px;
+    font-size: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
 .emty-space {
     height: 100px;
@@ -166,10 +213,32 @@ img {
 .product-price {
     font-size: 15px;
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 22px;
 }
 span.sale-price {
     color: grey;
     text-decoration: line-through;
     font-weight: 100;
+}
+.container-products {
+    display: flex;
+    gap: 40px;
+    padding: 0 15px;
+    margin: 0 0 28px;
+}
+.container-footer {
+    background-color: lightgrey;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 32px 71px;
+    min-height: 500px;
+}
+.footer-heading {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.footer-menu {
+    font-size: 19px;
 }
